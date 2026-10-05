@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Pet Sanctuary 🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌟 Magical Pet Sanctuary 🌟</h1>
+        <p>A home for magical creatures ✨</p>
+    </header>
+
+    <main>
+
+        <button class="btn-adopt" onclick="openModal()">🐾 Adopt New Pet</button>
+
+        <dialog id="modal">
+            <section class="modal-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616430.png" alt="magical pet" width="80">
+                <h2>✨ Adopt a Pet</h2>
+                <form id="form">
+                    <label>Pet Name</label>
+                    <input id="name" type="text" placeholder="Pet name..." required>
+
+                    <label>Pet Type</label>
+                    <select id="type" required>
+                        <option value="">-- Choose --</option>
+                        <option>Dragon 🐉</option>
+                        <option>Unicorn 🦄</option>
+                        <option>Phoenix 🔥</option>
+                        <option>Fairy 🧚</option>
+                        <option>Griffin 🦅</option>
+                    </select>
+
+                    <label>Color</label>
+                    <input id="color" type="text" placeholder="e.g. Pink, Golden..." required>
+
+                    <label>Description</label>
+                    <textarea id="desc" placeholder="Describe your pet..." required></textarea>
+
+                    <div class="buttons">
+                        <button type="submit">🌟 Adopt!</button>
+                        <button type="button" onclick="closeModal()">Cancel</button>
+                    </div>
+                </form>
+            </section>
+        </dialog>
+
+        <section id="grid" class="grid">
+            <p>Loading... ✨</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
